@@ -1,12 +1,12 @@
 import {ethers} from "hardhat";
 
 async function main() {
-    const IERC998ERC721TopDown = await ethers.getContractFactory("IERC998ERC721TopDown");
-    const ierc998erc721topdown = await IERC998ERC721TopDown.deploy();
+    const ERC998ERC721TopDown = await ethers.getContractFactory("ERC998ERC721TopDown");
+    const erc998erc721topdown = await ERC998ERC721TopDown.deploy();
 
     await gtn.deployed();
 
-    console.log("IERC998ERC721TopDown Deployed to: ", ierc998erc721topdown.address);
+    console.log("ERC998ERC721TopDown Deployed to: ", erc998erc721topdown.address);
 }
 
 main()
